@@ -1,4 +1,6 @@
 
+Live on https://frontend-dx5b.onrender.com
+
 Make sure you have your own credentials:
  - in backend/.env file for MONGO_URI variable
  - frontend/src/pages/user/UserOrderDetailsPage.js for PayPal client-id
