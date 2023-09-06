@@ -6,6 +6,8 @@ import PriceFilterComponent from "../../components/filterQueryResultOptions/Pric
 import RatingFilterComponent from "../../components/filterQueryResultOptions/RatingFilterComponent";
 import CategoryFilterComponent from "../../components/filterQueryResultOptions/CategoryFilterComponent";
 import AttributesFilterComponent from "../../components/filterQueryResultOptions/AttributesFilterComponent";
+import ReactLoading from "react-loading";
+import "../../css/reactLoading.css";
 
 import { useEffect, useState } from "react";
 import { useParams, useLocation, useNavigate } from "react-router-dom";
@@ -97,6 +99,10 @@ const ProductListPageComponent = ({ getProducts, categories }) => {
     window.location.href = "/product-list";
   };
 
+  const Example = ({ type, color }) => (
+    <ReactLoading type={type} color={color} height={"20%"} width={"20%"} />
+  );
+
   return (
     <Container fluid style={{ overflowX: "hidden" }}>
       <Row>
@@ -141,7 +147,14 @@ const ProductListPageComponent = ({ getProducts, categories }) => {
         </Col>
         <Col md={9}>
           {loading ? (
-            <h1>Loading products ....</h1>
+            <div className="loading-container">
+              <Example
+                className="react-loading"
+                type={"spinningBubbles"}
+                color={" #1767c2"}
+                style={{}}
+              />
+            </div>
           ) : error ? (
             <h1>Error while loading products. Try again later.</h1>
           ) : (

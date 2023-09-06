@@ -1,0 +1,23 @@
+/* @import "./rootConstants.css"; */
+.loading-container {
+  position: fixed;
+  /* height: 100vh; */
+  top: 15%;
+  left: 29%;
+  right: 0;
+  /* bottom: 2%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  width: 50%; /* Adjust the width as needed */
+  height: 50%;
+  backdrop-filter: blur(0.7px);
+  /* color: rgb(231, 225, 225); */
+}
+
+.react-loading {
+  margin: 0 auto;
+  width: 20%; /* Adjust the width as needed */
+  height: 20%; /* Adjust the height as needed */
+}

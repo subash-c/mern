@@ -16,8 +16,16 @@ const ProductForListComponent = ({
   const getLowSize = (s) => {
     return s.substring(0, 200) + "...";
   };
+
   return (
-    <Card style={{ marginTop: "30px", marginBottom: "50px" }}>
+    <Card
+      style={{
+        marginTop: "30px",
+        marginBottom: "50px",
+        height: "7%",
+        overflow: "hidden",
+      }}
+    >
       <Row>
         <Col lg={5}>
           <blockquote
@@ -37,13 +45,14 @@ const ProductForListComponent = ({
             crossOrigin="anonymous"
             variant="top"
             src={
+              images ? images[0].path : ""
               // "https://drive.google.com/drive/folders/1ps1ighAqZFBCGJCM79e3bitT35NNQ7o3"
               // "https://firebasestorage.googleapis.com/v0/b/mern-ecom-fdc77.appspot.com/o/1-1-540828-noble-faith-l-original-imae8zbajetnasvt.jpeg?alt=media&token=b429b2ce-3ec9-4090-aab4-164ceb21350f"
               // "http://img6a.flixcart.com/image/shoe/s/g/m/black-r998-22-ladela-38-original-imaeh3w9sc3nhuwa.jpeg"
-              "https://raw.githubusercontent.com/subash-c/productImages/main/0000000000000-deziworkz-1100x1100-imaedz2krgqc4pxx.jpeg"
+              // "https://raw.githubusercontent.com/subash-c/productImages/main/0000000000000-deziworkz-1100x1100-imaedz2krgqc4pxx.jpeg"
             }
           />
-          {/* {console.log(images)} */}
+          {/* {console.log(images[0].path)} */}
         </Col>
         <Col lg={7}>
           <Card.Body>
