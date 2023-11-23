@@ -1,5 +1,5 @@
 
-(Old file -> Live on https://frontend-dx5b.onrender.com)
+(Old file -> Live on https://frontend-dx5b.onrender.com  Loading data will take time)
 
 Make sure you have your own credentials:
  - in backend/.env file for MONGO_URI variable
