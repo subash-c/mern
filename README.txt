@@ -1,5 +1,7 @@
 
-(Old file -> Live on https://frontend-dx5b.onrender.com  Loading data will take time)
+(Archive -> https://frontend-dx5b.onrender.com  Loading data may take time)
+
+Development has been migrated to gitlab repo (:
 
 Make sure you have your own credentials:
  - in backend/.env file for MONGO_URI variable
